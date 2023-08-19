@@ -75,11 +75,12 @@ main {
     width: 100%;
     list-style: none;
     background-color: black;
-
-    display: none;
+    opacity: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0 0 30px 30px;
+    transition: 0.5s;
 }
 
 .social li {
@@ -91,14 +92,16 @@ main {
     height: 20px;
     border-radius: 5px;
 }
+
+/* Hover Effects */
 .social li:hover {
     cursor: pointer;
     scale: 1.3;
 }
-/* Hover Effects */
+
 .card:hover .social {
+    opacity: 1;
     transition: 0.5s;
-    display: flex;
 }
 
 .card:hover {
