@@ -1,5 +1,6 @@
 /* Imports and Variables */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
+
 :root {
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     --card-shadow: 1px 1px 49px 11px rgb(0, 139, 123);
@@ -11,6 +12,7 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
+
 main {
     display: flex;
     justify-content: center;
@@ -18,8 +20,8 @@ main {
     flex-direction: column;
     height: 100vh;
 }
-/* Main Card */
 
+/* Main Card */
 .card {
     height: auto;
     display: flex;
@@ -30,6 +32,7 @@ main {
     justify-content: center;
     transition: all 0.5s;
 }
+
 /* Card Info */
 .info {
     padding: 1rem;
@@ -38,6 +41,8 @@ main {
 
 /* Card Image */
 .profile-pic {
+    width: fit-content;
+    height: fit-content;
     border-radius: 50%;
     margin: 1rem;
     max-width: 150px;
@@ -49,22 +54,26 @@ main {
     padding: 1rem;
     margin: 1rem;
 }
+
 .skills h2 {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .skills-list {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, minmax(50px, 1fr));
     grid-gap: 1rem;
 }
+
 .skills-list li {
     border-radius: 5px;
     padding: 0.3rem;
     box-shadow: var(--box-shadow);
     text-align: center;
 }
+
 .skills-list li:hover {
     cursor: pointer;
     scale: 1.2;
@@ -87,6 +96,7 @@ main {
     margin: 0 10px;
     padding: 10px;
 }
+
 .social-icon {
     width: 20px;
     height: 20px;
