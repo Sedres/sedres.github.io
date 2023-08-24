@@ -23,6 +23,7 @@ main {
 
 /* Main Card */
 .card {
+    width: fit-content;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@ main {
 .skills-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-columns: repeat(3, minmax(1rem, 1fr));
     grid-gap: 1rem;
 }
 
@@ -72,6 +73,7 @@ main {
     padding: 0.3rem;
     box-shadow: var(--box-shadow);
     text-align: center;
+    width: fit-content;
 }
 
 .skills-list li:hover {
@@ -116,7 +118,7 @@ main {
 
 .card:hover {
     box-shadow: var(--card-shadow);
-    scale: 1.2;
+    scale: 1.1;
 }
 
 .card:hover .profile-pic {
@@ -127,4 +129,11 @@ main {
 .profile-pic:hover {
     cursor: pointer;
     scale: 1.2;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
 }
